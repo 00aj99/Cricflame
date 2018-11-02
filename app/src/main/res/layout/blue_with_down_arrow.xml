@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp">
+    <TextView android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+        android:id="@+id/blue_with_down_arrow"
+        android:background="@drawable/ranking_type_back"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INDIA"
+        android:layout_centerHorizontal="true" />
+    <ImageView android:padding="4dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:src="@mipmap/ic_action_arrow_drop_down"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

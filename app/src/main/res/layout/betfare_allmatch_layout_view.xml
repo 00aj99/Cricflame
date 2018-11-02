@@ -1,0 +1,30 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llt_betfair_item"
+    android:orientation="vertical"
+    android:background="@drawable/toolbar_gradient_clr"
+    android:padding="7dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toLeftOf="@id/item_info"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="5dp"
+        android:text="This is text"
+        android:textColor="@color/colorResult"
+        android:textAppearance="?android:attr/textAppearanceSmall"/>
+    <ImageView
+        android:id="@+id/item_info"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="4dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"  />
+</RelativeLayout>

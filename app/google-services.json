@@ -1,0 +1,254 @@
+{
+  "project_info": {
+    "project_number": "943109609317",
+    "firebase_url": "https://cricflame-8rde2.firebaseio.com",
+    "project_id": "cricflame-8rde2",
+    "storage_bucket": "cricflame-8rde2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943109609317:android:b809c37e744dcea5",
+        "android_client_info": {
+          "package_name": "com.cricflame.cricflame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lEyygYMEiV1HFKWlvU3TsVEyNSRktBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943109609317:android:945c80a26fab1707",
+        "android_client_info": {
+          "package_name": "com.cricflame.cricket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lEyygYMEiV1HFKWlvU3TsVEyNSRktBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943109609317:android:432449bc73b3af09",
+        "android_client_info": {
+          "package_name": "com.make.ipl.ipl2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lEyygYMEiV1HFKWlvU3TsVEyNSRktBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943109609317:android:9ef1b52ced169a6e",
+        "android_client_info": {
+          "package_name": "com.make.psl.psl2018"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lEyygYMEiV1HFKWlvU3TsVEyNSRktBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943109609317:android:29bb79c1231ce816",
+        "android_client_info": {
+          "package_name": "net.cricflame.cricket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943109609317-oq5sqhcfd798o6c9962cg002uf70qvun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.cricflame.cricket",
+            "certificate_hash": "af64b855c46b0ca65b90e998fbca68066fca9c69"
+          }
+        },
+        {
+          "client_id": "943109609317-mflajn75q12pfhbgog8akh3qmeee97gg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.cricflame.cricket",
+            "certificate_hash": "7c698a7f283d27491ba8bc15059a04e0daef0c16"
+          }
+        },
+        {
+          "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lEyygYMEiV1HFKWlvU3TsVEyNSRktBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943109609317:android:2568f8fdac4f7592",
+        "android_client_info": {
+          "package_name": "net.live.cricketchitchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lEyygYMEiV1HFKWlvU3TsVEyNSRktBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943109609317:android:007a504894818e23",
+        "android_client_info": {
+          "package_name": "red.chilli.firebasedatafeeder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943109609317-8qmakbaubc6k7tg1av29fnoh9u7980ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1lEyygYMEiV1HFKWlvU3TsVEyNSRktBo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

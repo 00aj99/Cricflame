@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    ads:layout_width="match_parent"
+    ads:layout_height="match_parent"
+    ads:background="#f03f3f3f"
+    tools:ignore="NamespaceTypo">
+    <ScrollView ads:id="@+id/scrollView" ads:layout_width="match_parent" ads:layout_height="match_parent" ads:fillViewport="true" ads:layout_above="@+id/banner_scoreCard">
+        <android.support.v4.widget.SwipeRefreshLayout
+            ads:id="@+id/swipeRefreshlayout"
+            ads:layout_width="match_parent"
+            ads:layout_height="wrap_content">
+            <ExpandableListView ads:id="@+id/expandableListView"
+                ads:layout_width="match_parent"
+                ads:layout_height="wrap_content" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </ScrollView>
+</RelativeLayout>

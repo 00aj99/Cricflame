@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        android:id="@+id/no_data"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp"
+        android:background="@drawable/toolbar_gradient_clr"
+        android:gravity="center_horizontal"
+        android:id="@+id/main_button_lay">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Date Wise"
+            android:id="@+id/date_wise_data"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/round_button_green"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Series Wise"
+            android:id="@+id/series_wise_data"
+            android:textColor="@color/parrot_base"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:background="@drawable/round_unselected_green" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Team Wise"
+            android:id="@+id/team_wise_data"
+            android:textColor="@color/parrot_base"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:background="@drawable/round_unselected_green" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/tour_list"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

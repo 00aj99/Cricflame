@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/background_live_line">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"  >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f03f3f3f"
+        android:layout_below="@+id/toolbar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+    <RelativeLayout
+        android:id="@+id/teams"
+        android:background="@drawable/score_main_back"
+        android:layout_marginTop="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="18dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@id/vs_icon">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/team1_flag"
+                android:background="@drawable/dark_black_outline_circle_background"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:padding="5dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="6dp"/>
+
+            <TextView android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/team1_name_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="-"
+                android:layout_marginStart="2dp"
+                android:layout_toEndOf="@id/team1_flag"
+                android:singleLine="true"
+                android:textAllCaps="true" />
+
+        </RelativeLayout>
+        <ImageView android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="23dp"
+            android:id="@+id/vs_icon"
+            android:src="@drawable/vs_icon"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@id/vs_icon">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/team2_flag"
+                android:background="@drawable/dark_black_outline_circle_background"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:padding="5dp"
+                android:scaleType="centerInside"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="6dp" />
+
+            <TextView android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:textColor="@color/white"
+                android:id="@+id/team2_name_short"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_toStartOf="@id/team2_flag"
+                android:text="-"
+                android:layout_marginRight="2dp"
+                android:singleLine="true"
+                android:textAllCaps="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/teams">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/white"
+                    android:id="@+id/question"
+                    android:text="Hello"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/extra_button_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/question"
+                    android:visibility="gone"
+                    android:layout_marginBottom="100dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/buton_1_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/option1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="8dp">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:text="A"
+                                android:maxWidth="40dp"
+                                android:padding="10dp"
+                                android:textSize="24sp"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:elevation="4dp"
+                                android:background="@drawable/series_first_back"/>
+                            <Button
+                                android:id="@+id/option1_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_unselected_green"
+                                android:text="Option 1"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/option2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:layout_weight="1"
+                            android:elevation="8dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:text="B"
+                                android:padding="10dp"
+                                android:textSize="24sp"
+                                android:gravity="center"
+                                android:maxWidth="40dp"
+                                android:elevation="4dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/series_first_back"/>
+
+
+                            <Button
+                                android:id="@+id/option2_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_unselected_green"
+                                android:text="Option 2"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/buton_2_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/buton_1_lay"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/option3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:elevation="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:text="C"
+                                android:elevation="4dp"
+                                android:padding="10dp"
+                                android:textSize="24sp"
+                                android:maxWidth="40dp"
+                                android:gravity="center"
+                                android:textColor="@color/white"
+                                android:background="@drawable/series_first_back"/>
+
+                            <Button
+                                android:id="@+id/option3_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_unselected_green"
+                                android:text="Option 3"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:id="@+id/option4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="15dp"
+                            android:elevation="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:text="D"
+                                android:padding="10dp"
+                                android:maxWidth="40dp"
+                                android:textSize="24sp"
+                                android:gravity="center"
+                                android:elevation="4dp"
+                                android:textColor="@color/white"
+                                android:background="@drawable/series_first_back"/>
+
+
+
+                            <Button
+                                android:id="@+id/option4_button"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:background="@drawable/round_unselected_green"
+                                android:text="Option 4"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+    </RelativeLayout>
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/toolbar_gradient_clr"
+            android:text="Sumbit"
+            android:id="@+id/button_submit"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

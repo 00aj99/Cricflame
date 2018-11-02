@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@mipmap/background_live_line"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tlb_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_gradient_clr"
+        app:popupTheme="@style/AppTheme.PopupOverlay"  >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_results"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tlb_results"
+        android:background="@drawable/toolbar_gradient_clr"
+        app:tabIndicatorColor="@color/parrot_base"
+        app:tabMode="fixed"
+        app:tabTextColor="#60bf6a"
+        app:tabSelectedTextColor="@color/parrot_base"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_results"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#f03f3f3f"
+        />
+
+</LinearLayout>
+
+
+
+

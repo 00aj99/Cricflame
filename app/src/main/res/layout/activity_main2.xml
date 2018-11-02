@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="4dp"
+        android:id="@+id/main_tool_lay"
+        android:background="#f03f3f3f"
+        >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/main_tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:background="@drawable/toolbar_gradient_clr"
+        app:popupTheme="@style/AppTheme.PopupOverlay"  >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+
+
+    </android.support.v7.widget.Toolbar>
+    </LinearLayout>
+
+<WebView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/web"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</WebView>
+</RelativeLayout>

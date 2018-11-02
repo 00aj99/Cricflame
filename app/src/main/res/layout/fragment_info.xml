@@ -1,0 +1,177 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/profile"
+        android:background="@color/grey_100"
+        app:layout_aspectRatio="200%"
+        app:layout_widthPercent="100%">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_gravity="center"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                android:src="@drawable/default_avata"
+                android:background="#00000000"/>
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="32dp"
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/profile"
+        android:paddingBottom="16dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="16dp"
+        android:orientation="vertical"
+        android:id="@+id/config_item"
+        android:layout_width="match_parent"
+        android:background="@android:color/background_light"
+        android:layout_height="wrap_content"
+       >
+        <RelativeLayout
+            android:id="@+id/layout_name"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_alignParentLeft="true"
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_account_box"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:textSize="16sp"
+                android:textColor="@color/grey_800"
+                android:layout_toRightOf="@+id/img_icon"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:text="Username"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_name"
+                android:textSize="14sp"
+                android:layout_below="@+id/tv_title"
+                android:layout_alignLeft="@+id/tv_title"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_phone"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_icon_phone"
+                android:layout_alignParentLeft="true"
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_phone"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_phone_title"
+                android:textSize="16sp"
+                android:textColor="@color/grey_800"
+                android:layout_toRightOf="@+id/img_icon_phone"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:text="Phone"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_phone"
+                android:textSize="14sp"
+                android:maxLength="10"
+                android:layout_below="@+id/tv_phone_title"
+                android:layout_alignLeft="@+id/tv_phone_title"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:id="@+id/layout_changepassword"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:id="@+id/img_icon_changepassword"
+                android:layout_alignParentLeft="true"
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_changepassword"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_chpassword_title"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey_800"
+                android:layout_toRightOf="@+id/img_icon_changepassword"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:text="Change Password"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:padding="10dp"
+            android:id="@+id/layout_signout"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_icon_signout"
+                android:layout_alignParentLeft="true"
+                android:layout_width="40dp"
+                android:src="@mipmap/ic_power_settings"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_signout_title"
+                android:textSize="16sp"
+                android:layout_centerVertical="true"
+                android:textColor="@color/grey_800"
+                android:layout_toRightOf="@+id/img_icon_signout"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_width="wrap_content"
+                android:clickable="true"
+                android:text="Sign Out"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</android.support.percent.PercentRelativeLayout>

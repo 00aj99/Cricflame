@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Help.HelpActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_gradient_clr"
+        app:popupTheme="@style/AppTheme.PopupOverlay"  >
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/colorHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_width="match_parent"
+            android:id="@+id/spinner_help"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:textColor="@color/colorResult"
+                android:text="Thanks – TEAM CRICFLAME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,658 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    ads:layout_width="match_parent"
+    ads:layout_height="wrap_content"
+    ads:background="#f03f3f3f"
+    tools:ignore="NamespaceTypo">
+
+    <TextView
+        ads:layout_width="match_parent"
+        ads:layout_height="wrap_content"
+        ads:background="@drawable/score_main_back"
+        ads:layout_marginLeft="28dp"
+        ads:layout_marginRight="28dp"
+        ads:layout_marginTop="10dp"
+        ads:text="Series Name"
+        ads:textSize="12dp"
+        ads:gravity="center"
+        ads:textColor="@color/white"
+        ads:id="@+id/series_name_match_info"/>
+    <RelativeLayout
+        ads:orientation="horizontal"
+        ads:id="@+id/teams"
+        ads:background="@drawable/score_main_back"
+        ads:layout_below="@+id/series_name_match_info"
+        ads:layout_marginTop="2dp"
+        ads:paddingTop="8dp"
+        ads:paddingBottom="18dp"
+        ads:layout_marginLeft="5dp"
+        ads:layout_marginRight="5dp"
+        ads:layout_width="match_parent"
+        ads:layout_height="wrap_content">
+
+        <RelativeLayout
+            ads:layout_width="wrap_content"
+            ads:layout_height="wrap_content"
+            ads:layout_alignParentStart="true"
+            ads:layout_toLeftOf="@id/vs_icon">
+
+            <ImageView
+                ads:layout_gravity="center_horizontal"
+                ads:id="@+id/team1_flag"
+                ads:background="@drawable/dark_black_outline_circle_background"
+                ads:layout_width="60dp"
+                ads:layout_height="60dp"
+                ads:scaleType="centerInside"
+                ads:padding="5dp"
+                ads:layout_alignParentStart="true"
+                ads:layout_marginTop="6dp"/>
+
+            <TextView ads:textSize="20sp"
+                ads:textStyle="bold"
+                ads:textColor="@color/white"
+                ads:id="@+id/team1_name_short"
+                ads:layout_width="wrap_content"
+                ads:layout_height="wrap_content"
+                ads:layout_marginTop="16dp"
+                ads:text="-"
+                ads:layout_marginStart="2dp"
+                ads:layout_toEndOf="@id/team1_flag"
+                ads:singleLine="true"
+                ads:textAllCaps="true" />
+            <TextView ads:textSize="11sp"
+                ads:textColor="@color/white"
+                ads:id="@+id/team1_name_full"
+                ads:layout_width="wrap_content"
+                ads:layout_height="wrap_content"
+                ads:text=""
+                ads:layout_below="@+id/team1_name_short"
+                ads:layout_marginStart="4dp"
+                ads:layout_toEndOf="@id/team1_flag"
+                ads:textAllCaps="false" />
+        </RelativeLayout>
+        <ImageView ads:layout_width="20dp"
+            ads:layout_height="20dp"
+            ads:layout_marginTop="23dp"
+            ads:id="@+id/vs_icon"
+            ads:src="@drawable/vs_icon"
+            ads:layout_centerInParent="true"/>
+
+        <RelativeLayout ads:layout_width="wrap_content"
+            ads:layout_height="wrap_content"
+            ads:layout_alignParentEnd="true"
+            ads:layout_toRightOf="@id/vs_icon">
+
+            <ImageView
+                ads:layout_gravity="center_horizontal"
+                ads:id="@+id/team2_flag"
+                ads:background="@drawable/dark_black_outline_circle_background"
+                ads:layout_width="60dp"
+                ads:layout_height="60dp"
+                ads:padding="5dp"
+                ads:scaleType="centerInside"
+                ads:layout_alignParentEnd="true"
+                ads:layout_marginTop="6dp" />
+
+            <TextView ads:textSize="20sp"
+                ads:textStyle="bold"
+                ads:gravity="end"
+                ads:textColor="@color/white"
+                ads:id="@+id/team2_name_short"
+                ads:layout_width="wrap_content"
+                ads:layout_height="wrap_content"
+                ads:layout_marginTop="16dp"
+                ads:layout_toStartOf="@id/team2_flag"
+                ads:text="-"
+                ads:layout_marginRight="2dp"
+                ads:singleLine="true"
+                ads:textAllCaps="true" />
+            <TextView ads:textSize="11sp"
+                ads:textColor="@color/white"
+                ads:id="@+id/team2_name_full"
+                ads:layout_width="wrap_content"
+                ads:layout_toStartOf="@id/team2_flag"
+                ads:layout_height="wrap_content"
+                ads:text=""
+                ads:layout_marginRight="4dp"
+                ads:layout_below="@+id/team2_name_short"
+                ads:textAllCaps="false" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView
+        ads:id="@+id/scrl_matchinfo"
+        ads:layout_width="match_parent"
+        ads:layout_height="wrap_content"
+        ads:layout_marginTop="10dp"
+        ads:layout_below="@+id/teams"
+        ads:scrollbars="vertical">
+
+        <LinearLayout
+            ads:layout_width="match_parent"
+            ads:layout_height="wrap_content"
+            ads:background="@drawable/transparent"
+            ads:orientation="vertical">
+
+            <LinearLayout
+                ads:layout_width="match_parent"
+                ads:layout_height="wrap_content"
+                ads:background="@drawable/transparent"
+                ads:orientation="vertical">
+
+                <TextView
+                    ads:layout_width="match_parent"
+                    ads:layout_height="wrap_content"
+                    ads:background="#495B5B5B"
+                    ads:padding="@dimen/header_padding"
+                    ads:text="INFO"
+                    ads:textColor="@color/white"
+                    ads:textSize="@dimen/header_size"
+                    ads:textStyle="bold" />
+
+                <LinearLayout
+                    ads:layout_width="match_parent"
+                    ads:layout_height="wrap_content"
+                    ads:background="@drawable/transparent"
+                    ads:orientation="vertical"
+                    ads:padding="10dp">
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:background="@drawable/transparent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:background="@drawable/transparent"
+                            ads:layout_weight=".40"
+                            ads:text="Match"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_match"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:layout_weight=".60"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:background="@drawable/transparent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:background="@drawable/transparent"
+                            ads:layout_weight=".40"
+                            ads:text="Series Name"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_series"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:layout_weight=".60"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:background="@drawable/transparent"
+                        ads:layout_marginTop="10dp"
+                        ads:layout_height="wrap_content"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:background="@drawable/transparent"
+                            ads:layout_weight=".40"
+                            ads:text="Toss Decision"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_toss"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:layout_weight=".60"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="Status"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_status"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp"
+                            />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="Start At"
+                            ads:textSize="15sp"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textStyle="bold"/>
+
+                        <TextView
+                            ads:id="@+id/txt_date"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:visibility="gone"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="End Time"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_time"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="Umpires"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_umpire"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="3rd Umpire"
+                            ads:textSize="15sp"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_third_umpire"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="Referee"
+                            ads:textSize="15sp"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_referee"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                ads:layout_width="match_parent"
+                ads:layout_height="wrap_content"
+                ads:background="@drawable/transparent"
+                ads:textColor="@color/white"
+                ads:orientation="vertical">
+
+                <TextView
+                    ads:layout_width="match_parent"
+                    ads:layout_height="wrap_content"
+                    ads:padding="@dimen/header_padding"
+                    ads:text="VENUE GUIDE"
+                    ads:background="#495B5B5B"
+                    ads:textColor="@color/white"
+                    ads:textSize="@dimen/header_size"
+                    ads:textStyle="bold" />
+
+                <LinearLayout
+                    ads:layout_width="match_parent"
+                    ads:layout_height="wrap_content"
+                    ads:orientation="vertical"
+                    ads:background="@drawable/transparent"
+                    ads:textColor="@color/white"
+                    ads:padding="10dp">
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:text="Stadium"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_stadium"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="City"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_city"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="Capacity"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_capacity"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:text="--"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="10dp"
+                        ads:background="@drawable/transparent"
+                        ads:textColor="@color/white"
+                        ads:orientation="horizontal">
+
+                        <TextView
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".40"
+                            ads:text="Host to"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="15sp"
+                            ads:textStyle="bold" />
+
+                        <TextView
+                            ads:id="@+id/txt_host"
+                            ads:layout_width="0dp"
+                            ads:layout_height="wrap_content"
+                            ads:layout_weight=".60"
+                            ads:background="@drawable/transparent"
+                            ads:textColor="@color/white"
+                            ads:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                ads:layout_width="match_parent"
+                ads:layout_height="wrap_content"
+                ads:background="@drawable/transparent"
+                ads:layout_marginLeft="8dp"
+                ads:layout_marginRight="8dp"
+                ads:orientation="vertical">
+                <TextView
+                    ads:layout_width="match_parent"
+                    ads:layout_height="wrap_content"
+                    ads:text="SQUADS"
+                    ads:background="#495B5B5B"
+                    ads:textStyle="bold"
+                    ads:textSize="@dimen/header_size"
+                    ads:textColor="@color/white"/>
+
+                <LinearLayout
+                    ads:layout_width="match_parent"
+                    ads:layout_height="wrap_content"
+                    ads:orientation="horizontal">
+                    <TextView
+                        ads:id="@+id/txt_match_team1"
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="8dp"
+                        ads:textSize="@dimen/header_size"
+                        ads:layout_weight=".60"
+                        ads:text="Team A"
+                        ads:textStyle="bold"
+                        ads:textColor="@color/white"
+                        ads:background="@drawable/transparent"/>
+                    <TextView
+                        ads:id="@+id/txt_team1_squad"
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="8dp"
+                        ads:layout_weight=".40"
+                        ads:textColor="@color/white"
+                        ads:textStyle="bold"
+                        ads:background="@drawable/transparent"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    ads:layout_width="match_parent"
+                    ads:layout_height="wrap_content"
+                    ads:orientation="horizontal">
+                    <TextView
+                        ads:id="@+id/txt_match_team2"
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:textColor="@color/white"
+                        ads:textSize="@dimen/header_size"
+                        ads:text="Team B"
+                        ads:layout_weight=".60"
+                        ads:textStyle="bold"
+                        ads:layout_marginTop="8dp"
+                        ads:background="@drawable/transparent"/>
+                    <TextView
+                        ads:id="@+id/txt_team2_squad"
+                        ads:layout_width="match_parent"
+                        ads:layout_height="wrap_content"
+                        ads:layout_marginTop="8dp"
+                        ads:textStyle="bold"
+                        ads:layout_weight=".40"
+                        ads:layout_marginBottom="8dp"
+                        ads:textColor="@color/white"
+                        ads:background="@drawable/transparent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                ads:layout_width="match_parent"
+                ads:layout_height="wrap_content"
+                ads:padding="@dimen/header_padding"
+                ads:text="HEAD 2 HEAD"
+                ads:background="#495B5B5B"
+                ads:textColor="@color/white"
+                ads:textSize="@dimen/header_size"
+                ads:textStyle="bold" />
+            <FrameLayout
+                ads:id="@+id/frm_h2h"
+                ads:layout_width="match_parent"
+                ads:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar ads:id="@+id/progress_bar"
+        ads:layout_width="wrap_content"
+        ads:layout_height="wrap_content"
+        ads:layout_centerHorizontal="true"
+        ads:layout_centerVertical="true" />
+</RelativeLayout>

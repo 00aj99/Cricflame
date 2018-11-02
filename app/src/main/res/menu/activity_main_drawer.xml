@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/browse_series"
+            android:icon="@drawable/ic_matches"
+            android:visible="false"
+            android:title="Browse Series" />
+        <item
+            android:id="@+id/browse_team"
+            android:icon="@drawable/browse_team"
+            android:visible="false"
+            android:title="Browse Team" />
+        <item
+            android:id="@+id/browse_player"
+            android:visible="false"
+            android:icon="@drawable/browse_player"
+            android:title="Browse Player" />
+        <item
+            android:id="@+id/schedule_match"
+            android:icon="@mipmap/ic_action_fixture"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/live_video"
+            android:visible="false"
+            android:icon="@drawable/live_video"
+            android:title="Cric-flame TV" />
+
+        <item
+            android:id="@+id/right_records"
+            android:icon="@drawable/ic_action_record"
+            android:visible="false"
+            android:title="Records" />
+
+        <item
+            android:id="@+id/icc_ranking"
+            android:icon="@drawable/ic_action_ranking"
+            android:title="ICC Ranking" />
+
+        <item
+            android:id="@+id/standing"
+            android:icon="@drawable/ic_action_standing"
+            android:title="Points Table" />
+
+        <item
+            android:id="@+id/upcoming_rates"
+            android:icon="@drawable/ic_action_standing"
+            android:visible="false"
+            android:title="Upcoming Matches Bhav" />
+
+        <item
+            android:id="@+id/games"
+            android:icon="@mipmap/games"
+            android:visible="false"
+            android:title="Games" />
+
+
+        <item android:title="Liveline Language: Default Hindi"
+            android:visible="false">
+            <menu>
+                <item
+                    android:id="@+id/nav_switch"
+                    android:title="Language"
+                    app:actionLayout="@layout/action_view_switch"
+                    />
+            </menu>
+        </item>
+
+        <!---->
+
+    </group>
+
+
+
+</menu>

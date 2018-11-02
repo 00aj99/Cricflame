@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.cricflame.cricflame">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.cricflame.cricflame.UpdateApp.App"
+        android:allowBackup="true"
+        android:icon="@drawable/applogo"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/applogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".betfair.BetfairMainActivity" />
+        <activity android:name=".betfair.BetfairActivity" />
+        <activity android:name=".betfair.BetfairAllMatch" />
+        <activity android:name=".betfair.BetfairMarketPrice" />
+        <activity android:name=".betfair.BettingListData" />
+        <activity
+            android:name="com.cricflame.cricflame.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cricflame.cricflame.MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.cricflame.cricflame.BrowseSeries"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.TourDetailsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.Fragment.Venue_Details_Fragment"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.MatchDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.News.NewsDetail"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.ScoreboardActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.BrowseTeamActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.BrowsePlayer"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.PlayerDetail"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.VideoViewActivity"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.cricflame.cricflame.VideoPlayer.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.cricflame.cricflame.LiveLineActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.News.NewsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.GalleryActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.WebActivityData"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.ChatActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.DummyBooks.DummyBook"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.GameActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.PollActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.TipsTricks.GameListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.ScheduleMatches.ScheduleMatches"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".Notification.Services.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notification.Services.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.cricflame.cricflame.LiveLineScoreboard"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <!--<activity
+            android:name="com.cricflame.cricflame.LiveVideoActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.cricflame.cricflame.Notification.NotificationListActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="NotificationListActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cricflame.cricflame.LiveVideoDetail"
+            android:configChanges="orientation|screenSize" />
+        <activity
+            android:name="com.cricflame.cricflame.PhotoDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.cricflame.cricflame.VideoTestActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.cricflame.cricflame.GCM.Calculator"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.cricflame.cricflame.LiveLine1.PitchReport.PitchReport"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="com.cricflame.cricflame.LiveLineDetailScore" />
+        <activity android:name="com.cricflame.cricflame.BrowseMatchDetail" />
+        <activity android:name="com.cricflame.cricflame.BrowseScorecardActivity" />
+        <activity android:name="com.cricflame.cricflame.ScheduleDetail" />
+        <activity
+            android:name="com.cricflame.cricflame.LiveLine1.LiveLine"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.cricflame.cricflame.LiveLine1.Commentries.Commentary"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.etiennelawlor.imagegallery.library.activities.ImageGalleryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label=""
+            android:theme="@style/Theme.ImageGallery" />
+       <!-- <activity
+            android:name="com.cricflame.cricflame.livestream.NewestPlayer"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="sensor" />-->
+        <activity android:name="com.cricflame.cricflame.TeamMatchActivity" />
+
+        <!-- FOR CHATTING -->
+        <activity android:name="com.cricflame.cricflame.Chat.login.LoginActivity" />
+        <activity android:name="com.cricflame.cricflame.Chat.registration.RegistrationActivity" />
+        <activity
+            android:name="com.cricflame.cricflame.Chat.main.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.cricflame.cricflame.Chat.conversation.ConversationActivity">
+            <intent-filter>
+                <action android:name="OPEN_CONVERSATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.cricflame.cricflame.Chat.profile.ProfileActivity" />
+        <activity android:name="com.cricflame.cricflame.Chat.firstlogin.UserFirstLoginActivity" />
+
+        <service
+            android:name="com.cricflame.cricflame.Chat.notifications.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.cricflame.cricflame.Chat.notifications.MyFirebaseInstanceIDService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="com.cricflame.cricflame.LiveLine1.PitchReport.PitchReportActivity" />
+        <activity android:name="com.cricflame.cricflame.LiveLine1.PitchReport.StatsDetailsActivity" />
+
+        <activity android:name="com.cricflame.cricflame.LiveLine1.PitchReport.AnalysisActivity" />
+
+        <activity android:name="com.cricflame.cricflame.LiveLine1.PitchReport.LivePitchActivity" />
+
+        <activity android:name="com.cricflame.cricflame.LiveLine1.PitchReport.DetailAnlysis" />
+
+        <activity android:name="com.cricflame.cricflame.PremiumActivity" />
+        <activity android:name="com.cricflame.cricflame.TipsTricks.WebsiteLinkActivity" />
+        <activity android:name="com.cricflame.cricflame.TipsTricks.TelegramLinkActivity" />
+        <activity android:name="com.cricflame.cricflame.TipsTricks.TippersLinkActivity" />
+        <activity android:name="com.cricflame.cricflame.TipsTricks.InterestingAppActivity" />
+        <activity android:name="com.cricflame.cricflame.TipsTricks.AndroidTrickLinkActivity" />
+        <activity android:name="com.cricflame.cricflame.Ranking.ICCRanking" />
+        <activity android:name="com.cricflame.cricflame.Standing.StandingActivity" />
+        <!--<activity android:name=".Liveline.OfflineCommentaryActivity" />-->
+        <activity android:name="com.cricflame.cricflame.FeedbackActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name="com.cricflame.cricflame.Records.RecordActivity" />
+        <activity android:name="com.cricflame.cricflame.Records.DetailsRecordActivity" />
+        <activity android:name="com.cricflame.cricflame.LiveLine1.Sessions.SessionsActivity" />
+
+        <activity android:name="com.cricflame.cricflame.Help.HelpActivity" />
+        <activity android:name="com.cricflame.cricflame.Results.ResultsActivity" />
+        <activity android:name="com.cricflame.cricflame.DummyBooks.MakeMatchActivity" />
+        <activity
+            android:name="com.cricflame.cricflame.FeatureMatchSeries"
+            android:label="@string/title_activity_feature_match_series"
+            android:theme="@style/AppTheme" />
+        <activity android:name="com.cricflame.cricflame.DayByDay.DaybydayScheduleMatches"></activity>
+        <activity android:name="com.cricflame.cricflame.DayByDay.DaybydayMatchesResult"></activity>
+        <activity android:name=".ICCRanking_Activity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ICC_Ranking_Details"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutUsActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".NewLiveMatchActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".LiveLineActivity2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".PointsTable_Activity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".LiveLineSessions"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".AboutUsWebViewActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".UpcomingRatesActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Quiz.Activity_play_now"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Quiz.Activity_Play_Login"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+        <activity android:name=".Quiz.Activity_Register"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateVisible|adjustResize"/>
+
+
+    </application>
+
+</manifest>

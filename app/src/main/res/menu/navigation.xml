@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <!-- <item
+        android:id="@+id/navigation_videos"
+        android:icon="@drawable/ic_videos"
+        android:visible="false"
+        app:showAsAction="ifRoom"
+        android:title="@string/title_videos" />-->
+
+
+
+    <item
+        android:id="@+id/navigation_liveline"
+        android:icon="@drawable/ic_matches"
+        app:showAsAction="ifRoom"
+        android:title="@string/title_matches" />
+
+    <item
+        android:id="@+id/navigation_betfair"
+        android:icon="@mipmap/ic_action_betfair"
+        app:showAsAction="ifRoom"
+        android:title="@string/title_betfair" />
+
+    <item
+        android:id="@+id/navigation_fixture"
+        android:icon="@mipmap/ic_action_fixture"
+        app:showAsAction="ifRoom"
+        android:title="Fixture" />
+
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/chat"
+        app:showAsAction="ifRoom"
+        android:title="@string/title_more" />
+
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_action_more"
+        app:showAsAction="ifRoom"
+        android:title="@string/title_home" />
+
+</menu>

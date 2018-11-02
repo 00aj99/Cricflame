@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_layout"
+    android:background="@mipmap/background_live_line"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_gradient_clr"
+        app:popupTheme="@style/AppTheme.PopupOverlay"  >
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:id="@+id/back"
+            android:src="@drawable/back"/>
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_gradient_clr"
+        app:tabIndicatorColor="@color/parrot_base"
+        app:tabMode="scrollable"
+        app:tabTextColor="#60bf6a"
+        app:tabSelectedTextColor="@color/parrot_base"
+        android:layout_below="@+id/toolbar"
+        />
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/tab_layout"
+       android:background="#f03f3f3f"
+       android:id="@+id/match_card_layout">
+
+       <LinearLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+           xmlns:app="http://schemas.android.com/apk/res/android"
+           xmlns:tools="http://schemas.android.com/tools"
+           app:orientation="vertical"
+           app:padding="4dp"
+           app:layout_width="match_parent"
+           app:layout_height="wrap_content"
+           app:foreground="@drawable/transparent"
+           tools:ignore="NamespaceTypo">
+
+           <android.support.v7.widget.AppCompatTextView
+               app:textColor="@color/white"
+               app:id="@+id/top_match_card_details"
+               app:layout_width="match_parent"
+               app:layout_height="wrap_content"
+               app:layout_marginLeft="30dp"
+               app:layout_marginTop="4dp"
+               app:layout_marginRight="30dp"
+               app:layout_marginBottom="4dp"
+               app:textSize="11dp"
+               app:background="@drawable/score_main_back"
+               app:gravity="center_horizontal"
+               app:text="st ind vs pak- 8 March 2017,1:30 PM"
+               app:autoSizeMinTextSize="9sp"
+               app:autoSizeTextType="uniform" />
+
+
+           <LinearLayout
+               app:orientation="vertical"
+               app:background="@drawable/score_main_back"
+               app:paddingLeft="10dp"
+               app:paddingRight="10dp"
+               app:clipChildren="false"
+               app:id="@+id/main_match_view_lay"
+               app:layout_width="match_parent"
+               app:layout_height="wrap_content"
+               app:layout_marginLeft="8dp"
+               app:layout_marginRight="8dp"
+               tools:ignore="MissingPrefix">
+
+               <android.support.v7.widget.AppCompatTextView
+                   app:textColor="#fff"
+                   app:id="@+id/venue_view"
+                   app:paddingTop="2dp"
+                   app:gravity="center_horizontal"
+                   app:layout_width="match_parent"
+                   app:layout_height="wrap_content"
+                   app:textSize="11dp"
+                   app:text="Chennai Super Kings tour of Bengaluru"
+                   app:autoSizeMinTextSize="11sp"
+                   app:autoSizeTextType="uniform" />
+
+               <RelativeLayout app:orientation="horizontal"
+                   app:clipChildren="false"
+                   app:layout_width="wrap_content"
+                   app:layout_height="wrap_content">
+
+                   <LinearLayout
+                       app:layout_width="wrap_content"
+                       app:layout_height="wrap_content"
+                       app:orientation="horizontal">
+
+                       <LinearLayout app:layout_width="55dp"
+                           app:layout_height="55dp"
+                           app:gravity="center"
+                           app:padding="5dp"
+                           app:background="@drawable/dark_black_outline_circle_background"
+                           app:id="@+id/team1_card_logo_image_view_lay">
+                           <ImageView
+                               app:layout_gravity="center"
+                               app:id="@+id/team1_card_logo_image_view"
+                               app:layout_width="wrap_content"
+                               app:layout_height="wrap_content"
+                               app:scaleType="fitXY"
+                               app:src="@drawable/applogo" />
+                       </LinearLayout>
+
+
+
+                       <LinearLayout app:orientation="vertical"
+                           app:padding="4dp"
+                           app:layout_width="wrap_content"
+                           app:layout_height="wrap_content">
+
+                           <android.support.v7.widget.AppCompatTextView
+                               app:textStyle="bold"
+                               app:textColor="#fff"
+                               app:id="@+id/team1_name_card"
+                               app:layout_width="match_parent"
+                               app:layout_height="wrap_content"
+                               app:textSize="13dp"
+                               app:text="IND"
+                               app:includeFontPadding="false" />
+                           <android.support.v7.widget.AppCompatTextView
+                               app:textColor="#fff"
+                               app:id="@+id/score1_card"
+                               app:visibility="visible"
+                               app:layout_width="match_parent"
+                               app:layout_height="wrap_content"
+                               app:text="247/8*"
+                               app:textSize="17dp"
+                               app:autoSizeMinTextSize="10.5sp"
+                               app:includeFontPadding="false"
+                               app:autoSizeTextType="uniform" />
+                           <android.support.v7.widget.AppCompatTextView
+                               app:textColor="#abb7bc"
+                               app:id="@+id/over1_card"
+                               app:visibility="visible"
+                               app:layout_width="match_parent"
+                               app:layout_height="wrap_content"
+                               app:text="13.5 OVERS"
+                               app:textSize="12.5dp"
+                               app:includeFontPadding="false"
+                               app:autoSizeMinTextSize="8.5sp"
+                               app:autoSizeTextType="uniform" />
+                           <android.support.v7.widget.AppCompatTextView
+                               app:textSize="12sp"
+                               app:textColor="#fff"
+                               app:id="@+id/full_team1_name_card"
+                               app:visibility="gone"
+                               app:layout_width="match_parent"
+                               app:layout_height="wrap_content"
+                               app:maxWidth="75dp"
+                               app:maxLines="2"
+                               app:layout_marginTop="-2dp"
+                               app:text="Hobart hurricanes kings"
+                               app:includeFontPadding="false"
+                               app:lineSpacingExtra="-3dp" />
+
+                       </LinearLayout>
+
+                   </LinearLayout>
+
+
+
+
+                   <LinearLayout
+                       app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                       app:orientation="vertical"
+                       app:paddingTop="4dp"
+                       app:layout_centerHorizontal="true"
+                       app:paddingBottom="4dp"
+                       app:clipChildren="false"
+                       app:layout_width="wrap_content"
+                       app:layout_height="wrap_content" >
+
+                       <android.support.v7.widget.AppCompatTextView
+                           app:textColor="@color/ranking_item_header"
+                           app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                           app:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                           app:id="@+id/match_card_status"
+                           app:layout_width="wrap_content"
+                           app:layout_height="wrap_content"
+                           app:layout_marginBottom="2dp"
+                           app:text="LIVE"
+                           app:maxLines="1"
+                           app:textSize="11.8dp"
+                           app:includeFontPadding="false"
+                           app:autoSizeMinTextSize="12sp"
+                           app:autoSizeTextType="uniform" />
+
+
+                       <android.support.v7.widget.AppCompatImageView
+                           app:layout_gravity="center_horizontal"
+                           app:layout_width="20dp"
+                           app:layout_height="20dp"
+                           app:scaleType="fitXY"
+                           app:src="@drawable/vs_icon" />
+                   </LinearLayout>
+
+
+                   <RelativeLayout
+                       app:layout_width="wrap_content"
+                       app:layout_height="wrap_content"
+                       app:layout_alignParentRight="true">
+                       <LinearLayout
+                           app:layout_width="wrap_content"
+                           app:layout_height="wrap_content"
+                           app:orientation="horizontal">
+
+                           <LinearLayout
+                               app:orientation="vertical"
+                               app:padding="4dp"
+                               app:layout_width="wrap_content"
+                               app:layout_height="wrap_content">
+
+                               <android.support.v7.widget.AppCompatTextView
+                                   app:textStyle="bold"
+                                   app:textColor="#fff"
+                                   app:gravity="right"
+                                   app:id="@+id/team2_name_card"
+                                   app:layout_width="match_parent"
+                                   app:layout_height="wrap_content"
+                                   app:textSize="13dp"
+                                   app:text="IND"
+                                   app:includeFontPadding="false" />
+                               <android.support.v7.widget.AppCompatTextView
+                                   app:textColor="#fff"
+                                   app:gravity="right"
+                                   app:id="@+id/score2_card"
+                                   app:visibility="visible"
+                                   app:textSize="17dp"
+                                   app:layout_width="match_parent"
+                                   app:layout_height="wrap_content"
+                                   app:text="247/8*"
+                                   app:includeFontPadding="false"
+                                   app:autoSizeTextType="uniform" />
+                               <android.support.v7.widget.AppCompatTextView
+                                   app:textColor="#abb7bc"
+                                   app:gravity="right"
+                                   app:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                                   app:id="@+id/over2_card"
+                                   app:visibility="visible"
+                                   app:layout_width="match_parent"
+                                   app:layout_height="wrap_content"
+                                   app:text="38.3 OVERS"
+                                   app:textSize="12.5dp"
+                                   app:includeFontPadding="false"
+                                   app:autoSizeMinTextSize="8.5sp"
+                                   app:autoSizeTextType="uniform" />
+                               <android.support.v7.widget.AppCompatTextView
+                                   app:textSize="12sp" app:textColor="#fff"
+                                   app:gravity="right"
+                                   app:id="@+id/full_team2_name_card"
+                                   app:visibility="gone"
+                                   app:maxWidth="75dp"
+                                   app:maxLines="2"
+                                   app:layout_width="match_parent"
+                                   app:layout_height="wrap_content"
+                                   app:layout_marginTop="-2dp"
+                                   app:text="Chennai Super Kings"
+                                   app:includeFontPadding="false"
+                                   app:lineSpacingExtra="-3dp" />
+                           </LinearLayout>
+
+
+                           <LinearLayout
+                               app:layout_width="55dp"
+                               app:layout_height="55dp"
+                               app:padding="5dp"
+                               app:background="@drawable/dark_black_outline_circle_background"
+                               app:gravity="center">
+                               <ImageView
+                                   app:layout_gravity="center_vertical|center_horizontal"
+                                   app:id="@+id/team2_card_logo_image_view"
+                                   app:layout_width="wrap_content"
+                                   app:layout_height="wrap_content"
+                                   app:scaleType="fitXY"
+                                   app:src="@drawable/applogo" />
+                           </LinearLayout>
+
+                       </LinearLayout>
+
+                   </RelativeLayout>
+
+               </RelativeLayout>
+
+               <LinearLayout
+                   app:gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                   app:orientation="vertical"
+                   app:layout_width="match_parent"
+                   app:layout_height="wrap_content"
+                   app:layout_marginTop="-13dp">
+                   <LinearLayout
+                       app:orientation="horizontal"
+                       app:id="@+id/odds_card_layout"
+                       app:background="@drawable/odds_back"
+                       app:layout_gravity="center_horizontal"
+                       app:layout_width="wrap_content"
+                       app:layout_height="wrap_content">
+                       <android.support.v7.widget.AppCompatTextView
+                           app:textStyle="bold"
+                           app:textColor="#fff"
+                           app:layout_gravity="center"
+                           app:id="@+id/odds1_card"
+                           app:paddingLeft="6dp"
+                           app:paddingTop="0dp"
+                           app:paddingRight="3dp"
+                           app:paddingBottom="0dp"
+                           app:layout_width="wrap_content"
+                           app:layout_height="wrap_content"
+                           app:text="79"
+                           app:maxLines="1"
+                           app:includeFontPadding="false"
+                           app:textSize="10dp"
+                           app:autoSizeMaxTextSize="10.5sp"
+                           app:autoSizeMinTextSize="6sp"
+                           app:autoSizeTextType="uniform" />
+
+                       <View app:id="@+id/white_separator"
+                           app:background="#fff"
+                           app:layout_width="1dp"
+                           app:layout_height="match_parent"
+                           app:layout_margin="1dp" />
+                       <android.support.v7.widget.AppCompatTextView
+                           app:textStyle="bold"
+                           app:textColor="#fff"
+                           app:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                           app:id="@+id/odds2_card"
+                           app:paddingLeft="3dp"
+                           app:paddingTop="0dp"
+                           app:paddingRight="6dp"
+                           app:paddingBottom="0dp"
+                           app:layout_width="wrap_content"
+                           app:layout_height="wrap_content"
+                           app:text="49"
+                           app:maxLines="1"
+                           app:textSize="10dp"
+                           app:includeFontPadding="false"
+                           app:autoSizeMaxTextSize="10.5sp"
+                           app:autoSizeMinTextSize="6sp"
+                           app:autoSizeTextType="uniform" />
+                   </LinearLayout>
+                   <android.support.v7.widget.AppCompatTextView
+                       app:textSize="11sp"
+                       app:textColor="#fff"
+                       app:layout_gravity="center_horizontal"
+                       app:id="@+id/card_rate_team"
+                       app:layout_width="wrap_content"
+                       app:layout_height="wrap_content"
+                       app:text="MELBOURNE RENEGADE WOMEN"
+                       app:includeFontPadding="true" />
+               </LinearLayout>
+           </LinearLayout>
+
+           <android.support.v7.widget.AppCompatTextView
+               app:textColor="@color/white"
+               app:background="@drawable/score_main_back"
+               app:id="@+id/bottom_match_card_details"
+               app:layout_width="match_parent"
+               app:layout_height="wrap_content"
+               app:layout_marginTop="5dp"
+               app:layout_marginRight="30dp"
+               app:layout_marginLeft="30dp"
+               app:gravity="center_horizontal"
+               app:textSize="11dp"
+               app:text="India won the toss and decided to bat first and then declared their innings"
+               app:autoSizeMinTextSize="10sp"
+               app:autoSizeTextType="uniform" />
+
+       </LinearLayout>
+
+
+
+
+
+
+
+
+
+   </RelativeLayout>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="#f03f3f3f"
+        android:layout_below="@id/match_card_layout"/>
+</RelativeLayout>
+
+
+
+

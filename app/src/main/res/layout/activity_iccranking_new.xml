@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_live_line"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_Rankings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_gradient_clr"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/app_icon"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_logo" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f03f3f3f"
+        android:layout_below="@+id/toolbar_Rankings">
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@drawable/transparent"
+        android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/mens_dropdown"
+            android:background="#63a260"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="mens_dropdown_btn">
+            <TextView android:textSize="20dp"
+                android:textColor="@color/white"
+                android:id="@+id/mens_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:text="Men's Rankings"
+                android:layout_centerVertical="true" />
+
+            <ImageView android:id="@+id/mens_dropdown_button"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="13dp"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="mens_dropdown_btn"
+                android:src="@mipmap/ic_action_arrow_drop_down" />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/animate_men"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent">
+            <LinearLayout android:orientation="vertical"
+                android:id="@+id/mens_rankings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recycler_main">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mens_ranking_recycler"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout android:id="@+id/womens_dropdown"
+            android:background="#63a260"
+            android:onClick="womens_dropdown_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp">
+
+        <TextView android:textSize="20dp"
+            android:textColor="@color/white"
+            android:id="@+id/womens_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="Women's Rankings"
+            android:layout_centerVertical="true" />
+
+        <ImageView android:id="@+id/womens_dropdown_button"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="13dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_action_arrow_drop_down" />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/animate_women"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transparent">
+
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/womens_rankings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/womens_ranking_recycler"/>
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+            </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+</RelativeLayout>

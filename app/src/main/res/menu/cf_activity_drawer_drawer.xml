@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/browse_series"
+            android:icon="@drawable/ic_matches"
+            android:title="Browse Series" />
+        <item
+            android:id="@+id/browse_team"
+            android:icon="@drawable/browse_team"
+            android:title="Browse Team" />
+        <item
+            android:id="@+id/browse_player"
+            android:icon="@drawable/browse_player"
+            android:title="Browse Player" />
+        <item
+            android:id="@+id/schedule_match"
+            android:icon="@drawable/ic_matches"
+            android:title="Schedule Matches" />
+        <item
+            android:id="@+id/live_video"
+            android:icon="@drawable/live_video"
+            android:title="Live Video" />
+        <item
+            android:id="@+id/time_pass"
+            android:icon="@drawable/time_pass"
+            android:title="Time Pass" />
+        <item
+            android:id="@+id/cricket_polls"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Cricket Polls" />
+        <item
+            android:id="@+id/dummy_books"
+            android:icon="@drawable/dummy_books"
+            android:title="Dummy Books" />
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/ic_news"
+            android:title="News" />
+        <item
+            android:id="@+id/rate_us"
+            android:icon="@drawable/rate_icon"
+            android:title="Rate Us" />
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="Share App" />
+
+    </group>
+
+
+</menu>

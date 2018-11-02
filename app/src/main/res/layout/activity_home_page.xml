@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f03f3f3f"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/match_card_layout"
+                android:layout_width="match_parent"
+                android:background="@drawable/transparent"
+                android:layout_height="wrap_content"
+                android:paddingTop="0dp">
+                <ProgressBar
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/progressBar1"
+                    android:padding="20dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/scores_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:background="@color/transparent"/>
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:background="@color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    app:tabBackground="@drawable/tab_selector"
+                    app:tabGravity="center"
+                    app:tabIndicatorHeight="0dp"
+                    app:tabMaxWidth="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcv_series"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@+id/top_layout"/>
+
+        <TextView
+            android:id="@+id/top_matches"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rcv_series"
+            android:paddingLeft="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:background="#63a260"
+            android:textColor="@color/white"
+            android:text="Top Match Images"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerImage"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/top_matches"
+            android:src="@mipmap/ic_launcher" />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/SliderDotsImage"
+            android:layout_below="@+id/viewPagerImage"
+            android:background="@color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            app:tabBackground="@drawable/tab_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="20dp" />
+
+        <TextView
+            android:id="@+id/latest_vedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/SliderDotsImage"
+            android:paddingLeft="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="Featured Videos"
+            android:background="#63a260"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/lyt_video"
+            android:layout_width="match_parent"
+            android:layout_below="@id/latest_vedio"
+            android:layout_height="220dp">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/videosPager"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp" />
+            <android.support.design.widget.TabLayout
+                android:id="@+id/videoTabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                app:tabMaxWidth="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_latest_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lyt_video"
+            android:paddingLeft="18dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:background="#63a260"
+            android:layout_marginTop="8dp"
+            android:gravity="left"
+            android:text="Latest News"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <!--  <LinearLayout
+
+              android:layout_below="@+id/tv_latest_news"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/latest_news"
+            android:layout_below="@+id/tv_latest_news"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+        <!-- </LinearLayout>-->
+
+    </RelativeLayout>
+</ScrollView>

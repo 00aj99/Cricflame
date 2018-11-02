@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:background="@drawable/bhav_left_background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/backPrice1"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:id="@+id/backPrice2"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".50"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bhav_right_background"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/currentPrice1"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/currentPrice2"
+                android:textAlignment="center"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".17"
+            android:visibility="gone"
+            android:background="@color/brown"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/nextPrice1"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="16dp"
+                android:id="@+id/nextPrice2"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey"/>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<RelativeLayout android:id="@+id/layout_tips_heading"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/series_main_back"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/v"
+        android:layout_width="6dp"
+        android:layout_height="55dp"
+        android:background="@drawable/series_first_back"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/v"
+        android:src="@drawable/cf_logo" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/img"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/transparent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/txt_pitch_report_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/score_main_back"/>
+        <LinearLayout
+            android:background="@drawable/transparent"
+            android:padding="10dp"
+            android:id="@+id/ll_weather"
+            android:weightSum="2"
+            android:layout_below="@id/txt_pitch_report_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Weather"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+            <TextView
+                android:id="@+id/tv_weather"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#8c63a260"
+            android:padding="10dp"
+            android:id="@+id/ll_temp"
+            android:layout_below="@+id/ll_weather"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:gravity="start"
+                android:text="Temperature"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_temprature_degree"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_toLeftOf="@id/tv_temprature_fahren"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_temprature_fahren"
+                    android:textColor="@color/white"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/transparent"
+            android:padding="10dp"
+            android:id="@+id/ll_avg_team_score1"
+            android:layout_below="@+id/ll_temp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Avg First Inning Score"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_avg_team_score1"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#8c63a260"
+            android:padding="10dp"
+            android:id="@+id/ll_avg_team_score2"
+            android:layout_below="@+id/ll_avg_team_score1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Avg Second Inning Score"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_avg_team_score2"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/transparent"
+            android:padding="10dp"
+            android:id="@+id/ll_batwin1"
+            android:weightSum="2"
+            android:layout_below="@+id/ll_avg_team_score2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="First Bat Win"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_batwin1"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#8c63a260"
+            android:padding="10dp"
+            android:id="@+id/ll_batwin2"
+            android:layout_below="@+id/ll_batwin1"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Second Bat Win"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_batwin2"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/transparent"
+            android:padding="10dp"
+            android:id="@+id/ll_highest_score"
+            android:layout_below="@+id/ll_batwin2"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Highest Score"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_highest_score"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#8c63a260"
+            android:padding="10dp"
+            android:id="@+id/ll_highest_score_chase"
+            android:layout_below="@+id/ll_highest_score"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Highest Score Chased"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_highest_score_chase"
+                android:layout_weight="1"
+                android:gravity="right"                        android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:background="@drawable/transparent"
+            android:padding="10dp"
+            android:id="@+id/ll_lowest_score"
+            android:layout_below="@+id/ll_highest_score_chase"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Lowest Score"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_lowest_score"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#8c63a260"
+            android:padding="10dp"
+            android:id="@+id/ll_lowest_score_defend"
+            android:layout_below="@+id/ll_lowest_score"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:text="Lowest Score Defended"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text=":"/>
+
+            <TextView
+                android:id="@+id/tv_lowest_score_defend"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

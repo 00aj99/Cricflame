@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#041e35</color> //override
+    <color name="coloroldPrimary">#AFB42B</color> //override
+    <color name="coloroldPrimary1">#DA0041</color>
+    <color name="colorTestPrimary">#171616</color>
+    <color name="colorPrimary2">#3F51B5</color>
+    <color name="colorPrimary1">#00008B</color>
+    <color name="colorPrimaryDark">#021c33
+    </color>
+    <color name="colorAccent">#28bebebe</color>
+    <color name="dark_blue_color">#FF9800</color> //override
+    <color name="white">#ffffff</color>
+    <color name="backwhite">#c8c5c5</color>
+    <color name="score_bg">#37474f</color> //override
+    <color name="black">#000000</color>
+    <color name="colorText">#fafafa</color>
+    <color name="grey">#818181</color>
+    <color name="blue">#1F79D5</color>
+    <color name="green">#39B54A</color>
+    <color name="brown">#614126</color>
+    <color name="light_green">#dce9b3</color>
+    <color name="header_grey">#E2E5E3</color> //override
+    <color name="black_brown">#ff444444</color>
+    <color name="base_background">#042036</color>
+    <color name="transparent">#00000000</color>
+    <color name="dark_grey">#595656</color>
+    <color name="light_pink">#FFB6C1</color>
+    <color name="light_blue">#2797E6</color>
+    <color name="dark_blue">#00102D</color>
+    <color name="inactive_tab">#EEFF41</color>
+    <color name="betfair_bg">#057B5B</color>
+    <color name="betfair_font">#FFE417</color>
+    <color name="browse_team_font">#D45A04</color>
+    <color name="browse_team_background">#171616</color>
+    <color name="live_line_background">#33FAFDE8</color>
+    <color name="light_dark">#5691AE</color>
+    <color name="dark_black">#CC323b4c</color>
+    <color name="color_trans_black">#CC000000</color>
+    <color name="color_trans_one_black">#80ffffff</color>
+
+    <!--FOR CHATTING-->
+
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="colorSender">#DDFAC8</color>
+    <color name="colorLink">#0588BC</color>
+    <color name="colorDividerTransparent">#77B6B6B6</color>
+
+    <!--changed with brother-->
+    <color name="colorHeading">#b5e1e6</color>
+    <color name="colorResult">#4db6ac</color>
+    <color name="tabIndicator">#4db6ac</color>
+    <color name="darkHeading">#0f6c64</color>
+    <color name="back_schedule">#2d464d</color>
+    <color name="header_new">#dd126a8f</color>
+    <color name="match_back">#19ffffff</color>
+    <color name="hilightedBackgroundColor">#a2000000</color>
+    <color name="newblue">#2d7ac0</color>
+    <color name="series_name_back">#1d2225</color>
+    <color name="series_name_color">#0fa9ec</color>
+    <color name="result_color">#29947f</color>
+    <color name="ranking_header_color">#2b4755</color>
+    <color name="ranking_item_header">#40b04c</color>
+    <color name="live_line_batting_team_color">#a73c4a</color>
+    <color name="session_back">#a73c4a</color>
+    <color name="transparent_green">#8c63a260</color>
+    <color name="yes_no_back">#17303d</color>
+    <color name="parrot_base">#40b04c</color>
+    <color name="second_main">#54edf0</color>
+    <color name="parrot_medium">#60bf6a</color>
+    <color name="parrot_light">#80db89</color>
+</resources>

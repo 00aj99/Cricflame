@@ -1,0 +1,89 @@
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/transparent"
+        android:id="@+id/main_sereis_lay"
+        android:orientation="vertical"
+
+        >
+        <TextView
+            android:text="hello"
+            android:id="@+id/month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/toolbar_gradient_clr"
+            android:padding="4dp"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingLeft="1dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/main_click_lay"
+            android:background="@drawable/series_back"
+            android:padding="1dp">
+
+            <View
+                android:layout_width="6dp"
+                android:layout_height="55dp"
+                android:background="@drawable/series_first_back"></View>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/series_name"
+                    android:textColor="@color/white"
+                    android:maxLines="3"
+                    android:layout_marginTop="2dp"
+                    android:text="Australia and Pakistan in Zimbabwe T20I TRI-Series 2018"
+                    android:textSize="15dp"
+                    android:maxWidth="300dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/time_period"
+                    android:textColor="@color/grey_400"
+                    android:maxLines="3"
+                    android:text="csdcvfvvvb"
+                    android:textSize="12dp"
+                    android:maxWidth="280dp"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+            <ImageView
+                android:id="@+id/item_info"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/right_arrow"
+                android:layout_marginRight="5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>

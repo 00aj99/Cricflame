@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/toolbar_gradient_clr"
+        android:id="@+id/header_lay">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Team | Ranking"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/header_txt"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="2dp"
+            android:text="View All"
+            android:textSize="14dp"
+            android:id="@+id/button_view"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/transparent"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="15dp"
+        android:layout_below="@+id/header_lay"
+        android:id="@+id/item_rank_recycler"/>
+
+</RelativeLayout>

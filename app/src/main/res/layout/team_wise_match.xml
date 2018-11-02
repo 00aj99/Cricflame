@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/transparent">
+
+    <RelativeLayout
+        android:id="@+id/lyt_main_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/score_main_back"
+        android:padding="4dp">
+        <LinearLayout android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dark_black_outline_circle_background"
+            android:id="@+id/team1_card_logo_image_view_lay">
+
+            <ImageView
+                android:id="@+id/imv_team"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/applogo"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/txt_team_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delhi DareDevil"
+            android:textSize="19sp"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/team1_card_logo_image_view_lay"
+            android:textColor="@color/white"/>
+
+         <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+             android:layout_marginRight="10dp"
+            android:src="@drawable/right_arrow"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

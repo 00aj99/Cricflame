@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_width="match_parent"
+    app:layout_height="match_parent"
+    tools:ignore="NamespaceTypo">
+
+    <android.support.v7.widget.CardView
+        app:id="@+id/cardLayout"
+        app:layout_width="match_parent"
+        app:layout_height="200dp"
+        android:cardBackgroundColor="#313131"
+        android:cardCornerRadius="15dp">
+
+
+        <RelativeLayout
+            app:layout_width="match_parent"
+            app:layout_height="match_parent"
+            app:background="#134d4c4c">
+
+            <TextView app:textColor="@color/white"
+                app:layout_centerHorizontal="true"
+                app:id="@+id/who_win_txt"
+                app:gravity="center_horizontal"
+                app:background="@color/parrot_base"
+                app:paddingTop="4dp"
+                app:textAllCaps="true"
+                app:textSize="16dp"
+                app:elevation="4dp"
+                app:textStyle="bold"
+                app:paddingBottom="4dp"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:text="Who Will Win?"
+                app:singleLine="true" />
+
+            <ImageView app:id="@+id/videoImage"
+                app:layout_width="match_parent"
+                app:layout_height="match_parent"
+                app:scaleType="centerCrop" />
+            <ImageView app:layout_width="50dp"
+                app:layout_height="50dp"
+                app:src="@mipmap/ic_play_circle"
+                app:scaleType="fitXY"
+                app:layout_centerInParent="true" />
+            <TextView app:textColor="@color/white"
+                app:layout_centerHorizontal="true"
+                app:id="@+id/videoTitle"
+                app:gravity="center_horizontal"
+                app:background="#6e0a0a0a"
+                app:paddingTop="4dp"
+                app:textSize="14dp"
+                app:paddingBottom="4dp"
+                app:layout_alignParentBottom="true"
+                app:layout_width="match_parent"
+                app:layout_height="wrap_content"
+                app:text="Who Will Win?"
+                app:singleLine="true" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

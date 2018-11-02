@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="0dp"
+    android:minHeight="80dp"
+    android:minWidth="112dp"
+    android:id="@+id/main_lay_rank"
+    android:background="@drawable/rank_item_back">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/dark_black_outline_circle_background"
+        android:layout_gravity="center"
+        android:layout_weight=".20">
+
+      <!--  <ImageView
+        android:id="@+id/flag"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher1" />-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/flag"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/applogo" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/team_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/format"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/ranking_type_back"
+        android:gravity="center" />
+
+</LinearLayout>

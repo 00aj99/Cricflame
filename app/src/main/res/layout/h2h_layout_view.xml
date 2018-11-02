@@ -1,0 +1,135 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/series_main_back"
+    android:id="@+id/h2h_lyt"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_h2h"
+        android:layout_width="6dp"
+        android:layout_height="75dp"
+        android:background="@drawable/live_button_frst"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:id="@+id/lyt_team1_h2h"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/view_h2h"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_h2h_team1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Islamabad United"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_h2h_team1_runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Runs: 124"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#00ffcd"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/imv_h2h_home_team"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:padding="1dp"
+        android:text="H"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/holo_red_dark"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="@drawable/dark_black_outline_circle_background"
+        android:layout_marginLeft="4dp"
+        android:scaleType="fitXY"
+        android:layout_marginRight="4dp"
+        android:layout_toRightOf="@id/lyt_team1_h2h"/>
+
+    <TextView
+        android:id="@+id/imv_h2h_away_team"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:padding="1dp"
+        android:text="A"
+        android:layout_marginTop="2dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_red_dark"
+        android:gravity="center"
+        android:background="@drawable/dark_black_outline_circle_background"
+        android:scaleType="fitXY"
+        android:src="@drawable/android_app"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/lyt_team_2_h2h"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/lyt_team_2_h2h"
+        android:padding="4dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_h2h_team2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Islamabad United"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txt_h2h_team2_runs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Runs: 124"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#00ffcd"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyt_team_2_h2h"
+        android:layout_toRightOf="@id/view_h2h"
+        android:paddingLeft="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:background="@drawable/bottom_round_corners"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16-03-2018:"
+            android:textSize="14sp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textColor="#ff9000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Islamabad won by 7 wickets"
+            android:gravity="center"
+            android:id="@+id/h2h_results"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</RelativeLayout>

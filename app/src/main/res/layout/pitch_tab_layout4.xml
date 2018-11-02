@@ -1,0 +1,848 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transparent"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_below="@+id/top_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_series"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="Total Series"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val_series"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:textColor="@color/orange_700" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name_team1_series"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Team1"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="won"
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/value_team1_series"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name_team2_series"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="team2"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="won"
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/value_team2_series"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="Draw"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val_draw_series"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:textColor="@color/orange_700" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_match"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="Total Match"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val_match"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:textColor="@color/orange_700" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name_team1_match"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Team1"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="won"
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/value_team1_match"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/name_team2_match"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Team2"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="won"
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/value_team2_match"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+                        android:text="Tie"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val_match_draw"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Highest Score Chased"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_HSC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_HSC"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Lowest Score Defend"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_LSD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_LSD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Runs"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_MR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_MR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="High Scores"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_HS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_HS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Highest Averages"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_HAS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_HAS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Highest Strike Rates"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_HSR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_HSR"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Hundreds"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_M100"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_M100"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Fifties"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_M50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_M50"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Ducks"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_MD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_MD"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Sixes"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_M6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_M6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Fours"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_M4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_M4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Runs In A Series"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_MRS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_MRS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Wickets"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_MW"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_MW"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Best Economy Rates"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_BER"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_BER"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most 5 Wkt In A Ining"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_M5W"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_M5W"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="#8c63a260"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="Most Stumps"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_MS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_MS"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+                <LinearLayout
+                    android:padding="5dp"
+                    android:background="@drawable/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".20"
+                        android:gravity="left"
+                        android:text="10 Wkt In Inn. Only Test "
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/val1_10WI"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="left"
+
+                        android:textColor="@color/orange_700" />
+
+                    <TextView
+                        android:id="@+id/val2_10WI"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_weight=".10"
+                        android:gravity="right"
+
+                        android:textColor="@color/red_800" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

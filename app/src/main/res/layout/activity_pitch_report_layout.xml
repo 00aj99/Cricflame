@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LiveLine1.PitchReport.PitchReportActivity">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                android:background="@drawable/cricket_ground">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp">
+
+                    <RelativeLayout
+                        android:id="@+id/relative_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/test"
+                        android:layout_marginTop="10dp">
+
+                        <ImageView
+                            android:id="@+id/country_logo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@mipmap/ic_launcher" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/country_logo1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/country"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Austraila"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="542/9(179.3)"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RR:3.68"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/test"
+                        android:layout_marginTop="10dp">
+
+
+                        <LinearLayout
+                            android:id="@+id/layut_two"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/country2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ENGLAND"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="403(115.3)"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="218(72.5)"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="RR:2.99"
+                                android:textColor="@color/white"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/country_logo2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/layut_two"
+                            android:src="@mipmap/ic_launcher" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/line_anaylsis"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relative_one"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/button_layout2"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/image4"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/analysis" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toRightOf="@+id/image4"
+                                android:gravity="center"
+                                android:text="Head To Head"
+                                android:textColor="#fff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/button_layout2"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:id="@+id/image5"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:paddingLeft="10dp"
+                                android:src="@drawable/ball" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:layout_toRightOf="@+id/image5"
+                                android:gravity="center"
+                                android:text="Stats "
+                                android:textColor="#fff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/who_win_lay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/line_anaylsis"
+                        android:layout_margin="20dp"
+                        android:background="@drawable/button_layout1"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/image_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="-10dp"
+                            android:paddingLeft="10dp"
+                            android:src="@drawable/logo" />
+
+                        <TextView
+                            android:id="@+id/who_win"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/image_logo"
+                            android:gravity="left"
+                            android:paddingTop="10dp"
+                            android:text="Who is winning?"
+                            android:textColor="#ff6121"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/who_win"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="left"
+                            android:paddingBottom="5dp"
+                            android:text="Australia won by an inning and 41 runs."
+                            android:textColor="#fff"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/upcomning"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/who_win_lay"
+                        android:background="#263238"
+                        android:gravity="center"
+                        android:text="Wenkhede Stadium Kolkata"
+                        android:textColor="#ff6121"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_pitch_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_layout"
+                android:layout_marginTop="10dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
